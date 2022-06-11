@@ -1,0 +1,70 @@
+.login{
+    background-color: black;
+    height: 100vh;
+    display: grid;
+}
+
+.login > h1{
+    position: absolute;
+    width: 619px;
+    height: 80px;
+    left: 650px;
+    top: 50px;
+
+    font-style: normal;
+    font-weight: 800;
+    font-size: 72px;
+    line-height: 87px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.login > a{
+    padding: 20px;
+    border-radius: 99px;
+    
+    font-weight: 800;
+    color: white;
+    text-decoration: none;
+}
+
+.shape-blob {
+    background: #e0e0e0;
+    height: 200px;
+    width: 200px;
+    border-radius: 30% 50% 20% 40%;
+    animation: transform 20s ease-in-out infinite both alternate,
+      movement_one 10s ease-in-out infinite both;
+    
+}
+
+@keyframes transform {
+    0%,
+    100% {
+      border-radius: 33% 67% 70% 30% / 30% 30% 70% 70%;
+    }
+    20% {
+      border-radius: 37% 63% 51% 49% / 37% 65% 35% 63%;
+    }
+    40% {
+      border-radius: 36% 64% 64% 36% / 64% 48% 52% 36%;
+    }
+    60% {
+      border-radius: 37% 63% 51% 49% / 30% 30% 70% 70%;
+    }
+    80% {
+      border-radius: 40% 60% 42% 58% / 41% 51% 49% 59%;
+    }
+}
+  
+@keyframes movement_one {
+    0%,
+    100% {
+      transform: none;
+    }
+    50% {
+      transform: translate(50%, 20%) rotateY(10deg) scale(1.2);
+    }
+}
+  
