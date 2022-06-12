@@ -1,11 +1,21 @@
 import React from 'react';
+import TypeAnimation from 'react-type-animation';
 import './Login.css';
 
 function Login() {
   return (
     <div className = "login">
-      <h1>Spotify Spaces</h1>
+      <div className = "shape-blob2"></div>
+      <div className = "shape-blob1"></div>
+      <div className = "shape-blob"></div>
+      <TypeAnimation 
+        cursor = {true}
+        sequence = {['Spotify Spaces', 2000,'Spotify Spaces', 2000, ' ']}
+        wrapper = "h2"
+        repeat ={4}
+      />
       <a>LOGIN WITH SPOTIFY</a>
+      
     </div>
   );
 }

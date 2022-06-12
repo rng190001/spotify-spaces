@@ -1,14 +1,11 @@
 .login{
     background-color: black;
     height: 100vh;
-    display: grid;
 }
 
-.login > h1{
+.login > h2{
     position: absolute;
-    width: 619px;
-    height: 80px;
-    left: 650px;
+    left: 700px;
     top: 50px;
 
     font-style: normal;
@@ -21,50 +18,102 @@
 }
 
 .login > a{
+    position: absolute;
+    text-align: center;
+    width: 214px;
+    height: 24px;
+    left: 825px;
+    top: 757px;
     padding: 20px;
     border-radius: 99px;
-    
+    background-color: #16AA63;
     font-weight: 800;
     color: white;
     text-decoration: none;
 }
 
 .shape-blob {
-    background: #e0e0e0;
-    height: 200px;
-    width: 200px;
-    border-radius: 30% 50% 20% 40%;
-    animation: transform 20s ease-in-out infinite both alternate,
-      movement_one 10s ease-in-out infinite both;
-    
+  background-color: #16AA63;
+  height: 200px;
+  width: 200px;
+  border-radius: 30% 50% 20% 40%;
+  animation: transform 20s ease-in-out infinite both alternate,
+    movement_one 10s ease-in-out infinite both;
+  
+  position: absolute;
+  left: 70%;
+  top: 50%;
+  
+}
+
+.shape-blob1 {
+  background-color: #16AA63;
+  height: 500px;
+  width: 500px;
+  margin-left: -1000px;
+  top: -150px;
+  transform: rotate(-180deg);
+  animation: transform 30s ease-in-out infinite both alternate,
+    movement_two 60s ease-in-out infinite both;
+}
+
+.shape-blob2 {
+  background-color: rgba(22, 170, 99, 0.5);;
+  height: 350px;
+  width: 350px;
+  left: 500px;
+  top: -150px;
+  transform: rotate(-180deg);
+  animation: transform 30s ease-in-out infinite both alternate,
+    movement_two 60s ease-in-out infinite both;
 }
 
 @keyframes transform {
-    0%,
-    100% {
-      border-radius: 33% 67% 70% 30% / 30% 30% 70% 70%;
-    }
-    20% {
-      border-radius: 37% 63% 51% 49% / 37% 65% 35% 63%;
-    }
-    40% {
-      border-radius: 36% 64% 64% 36% / 64% 48% 52% 36%;
-    }
-    60% {
-      border-radius: 37% 63% 51% 49% / 30% 30% 70% 70%;
-    }
-    80% {
-      border-radius: 40% 60% 42% 58% / 41% 51% 49% 59%;
-    }
+  0%,
+  100% {
+    border-radius: 33% 67% 70% 30% / 30% 30% 70% 70%;
+  }
+  20% {
+    border-radius: 37% 63% 51% 49% / 37% 65% 35% 63%;
+  }
+  40% {
+    border-radius: 36% 64% 64% 36% / 64% 48% 52% 36%;
+  }
+  60% {
+    border-radius: 37% 63% 51% 49% / 30% 30% 70% 70%;
+  }
+  80% {
+    border-radius: 40% 60% 42% 58% / 41% 51% 49% 59%;
+  }
 }
-  
+
 @keyframes movement_one {
-    0%,
-    100% {
-      transform: none;
-    }
-    50% {
-      transform: translate(50%, 20%) rotateY(10deg) scale(1.2);
-    }
+  0%,
+  100% {
+    transform: none;
+  }
+  50% {
+    transform: translate(50%, 20%) rotateY(10deg) scale(1.2);
+  }
 }
-  
+
+@keyframes movement_two {
+  0%,
+  500% {
+    transform: none;
+  }
+  50% {
+    transform: translate(50%, 20%) rotate(-200deg) scale(1.2);
+  }
+}
+
+.type::after {
+  content: '|';
+  animation: cursor 1.1s infinite step-start;
+}
+
+@keyframes cursor {
+  50% {
+    opacity: 0;
+  }
+}
