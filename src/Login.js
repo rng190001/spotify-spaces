@@ -10,7 +10,7 @@ function Login() {
       <div className = "shape-blob"></div>
       <TypeAnimation 
         cursor = {true}
-        sequence = {['Spotify Spaces', 2000,'Spotify Spaces', 2000, ' ']}
+        sequence = {['Spotify Spaces', 3000, ' ']}
         wrapper = "h2"
         repeat ={4}
       />
