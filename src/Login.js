@@ -1,6 +1,7 @@
 import React from 'react';
 import TypeAnimation from 'react-type-animation';
 import './Login.css';
+import { loginUrl } from './spotify';
 
 function Login() {
   return (
@@ -14,7 +15,7 @@ function Login() {
         wrapper = "h2"
         repeat ={4}
       />
-      <a>LOGIN WITH SPOTIFY</a>
+      <a href ={loginUrl}>LOGIN WITH SPOTIFY</a>
       
     </div>
   );
